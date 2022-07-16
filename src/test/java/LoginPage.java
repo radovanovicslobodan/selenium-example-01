@@ -20,6 +20,9 @@ public class LoginPage extends BasePage {
     @FindBy(id = "user-name")
     List<WebElement> userNameList;
 
+    @FindBy(className = ".cart_list")
+    List<WebElement> cartList;
+
     public LoginPage(WebDriver driver) {
         super(driver);
     }
@@ -42,5 +45,9 @@ public class LoginPage extends BasePage {
 
     public int getListSize() {
         return userNameList.size();
+    }
+
+    public WebElement getLastElement() {
+        return cartList.get(cartList.size() - 1);
     }
 }

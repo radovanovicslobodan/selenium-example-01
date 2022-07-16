@@ -2,6 +2,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 class TestClass {
+
+    // comment
     public TestClass() {
         System.out.println("in constructor");
     }
@@ -21,7 +23,7 @@ public class Constructor {
     WebDriver driver;
     WebDriverWait wait;
 
-    BasePage(WebDriver driver, WebDriverWait wait){
+    public void BasePage(WebDriver driver, WebDriverWait wait){
         this. driver = driver;
         this.wait = wait;
     }
